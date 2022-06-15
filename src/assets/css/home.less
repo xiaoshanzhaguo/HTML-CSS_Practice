@@ -1,0 +1,80 @@
+html {
+    background-color: #333;
+}
+
+.header {
+    height: 40px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+
+        li {
+            a {
+                text-align: center;
+                line-height: 40px;
+                font-size: 12px;
+                font-family: 'Microsoft Yahei';
+            }
+        }
+    }
+
+    .header_left {
+        width: 60%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+        }
+    }
+
+
+    .header_right {
+        width: 23%;
+        display: flex;
+        text-align: center;
+
+        ul {
+            display: flex;
+            width: 60%;
+            justify-content: space-around;
+        }
+
+        .shopCar {
+            display: inline-block;
+            width: 110px;
+            line-height: 40px;
+            background-color: #424242;
+            font-size: 12px;
+
+            .white-area {
+                float: right;
+                width: 300px; // 由于宽度太大，故掉到下一行了
+                // margin-right: 8px; 因为把这个div放到shopCar里了，故不再需要这个margin-right，加了float后就会到最右边了
+                background-color: #fff;
+                transition: height 0.4s ease-out, opacity 0.2s ease-in, visibility 0.2s ease-in;
+                visibility: 0;
+                opacity: 0;
+                height: 0;
+                line-height: 100px;
+            }
+
+            &:hover {
+                background-color: #fff;
+
+                .white-area {
+                    opacity: 1;
+                    visibility: 1;
+                    height: 100px;
+                }
+
+                a {
+                    color: #ff674b;
+                }
+            }
+        }
+    }
+
+}
