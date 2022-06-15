@@ -6,47 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小米商城-Xiaomi 11 Ultra、Redmi K40 Pro、MIX FOLD，小米电视官方网站</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            list-style-type: none;
-        }
-
-        a {
-            /* 取消a的下划线不记得了,后来自己想起来了 */
-            text-decoration: none;
-            color: #b0b0b0;
-        }
-
-        a:hover {
-            color: #fff;
-        }
-
-        .header {
-            height: 35px;
-            background-color: #333;
-        }
-
-        .header_left {
-            width: 70%;
-        }
-
-        .header_left ul {
-            display: flex;
-            justify-content: space-between;
-            padding-left: 10px;
-        }
-
-        .header_left ul li a {
-            text-align: center;
-            line-height: 35px;
-            font-size: 12px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet/less" type="text/css" href="./css/home.less">
+    <link rel="stylesheet" type="text/css" href="./assets//icon/iconfont.css">
+    <script src="http://cdn.bootcss.com/less.js/2.7.0/less.min.js"></script>
 </head>
 
 <body>
@@ -65,10 +28,22 @@
                 <li><a href="#">协议规则</a></li>
                 <li><a href="#">下载app</a></li>
                 <li><a href="#">Select Location</a></li>
+            </ul>
+        </div>
+        <div class="header_right">
+            <ul>
                 <li><a href="#">登录</a></li>
                 <li><a href="#">注册</a></li>
                 <li><a href="#">消息通知</a></li>
             </ul>
+            <div class="shopCar">
+                <a href="#">
+                    <i class="iconfont icon-gouwuchekong"></i>
+                    <span>购物车</span>
+                    <span>(0)</span>
+                </a>
+                <div class="white-area">购物车中还没有商品，赶紧选购吧！</div>
+            </div>
         </div>
     </div>
 </body>
