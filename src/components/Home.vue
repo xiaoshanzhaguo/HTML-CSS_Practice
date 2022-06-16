@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小米商城-Xiaomi 11 Ultra、Redmi K40 Pro、MIX FOLD，小米电视官方网站</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
-    <link rel="stylesheet/less" type="text/css" href="./assets/css/home.less">
-    <link rel="stylesheet" type="text/css" href="./assets/icon/iconfont.css">
-    <script src="http://cdn.bootcss.com/less.js/2.7.0/less.min.js"></script>
-</head>
-
-<body>
+<template>
+  <div class="hello">
     <div class="header">
         <div class="header_left">
             <ul>
@@ -46,6 +33,18 @@
             </div>
         </div>
     </div>
-</body>
+  </div>
+</template>
 
-</html>
+<script>
+export default {
+  name: 'Home'
+}
+</script>
+
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="less">
+@import '../assets/css/index.css';
+@import '../assets/css/home.less';
+</style>
