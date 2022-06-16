@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="home">
     <div class="header">
         <div class="header_left">
             <ul>
@@ -33,12 +33,32 @@
             </div>
         </div>
     </div>
+    <div class="main">
+      <div class="top_products">
+        <div class="logo_img">
+          <img src="../assets/images/logo-mi2.png" alt=""/>
+        </div>
+        <div class="products_content">
+          <ul>
+            <li v-for="item in productList" :key="item"><a href="#">{{item}}</a></li>
+          </ul>
+        </div>
+        <div class="search">
+            <input type="text" />
+          </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  data() {
+    return {
+      productList: ["Xiami手机", "Redmi 红米", "电视", "笔记本", "平板", "家电", "路由器", "服务中心", "社区"]
+    }
+  }
 }
 </script>
 

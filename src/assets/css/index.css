@@ -10,7 +10,6 @@ li {
 a {
     /* 取消a的下划线不记得了,后来自己想起来了 */
     text-decoration: none;
-    color: #b0b0b0;
 }
 
 a:hover {
