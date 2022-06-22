@@ -23,13 +23,15 @@
                 <li><a href="#">注册</a></li>
                 <li><a href="#">消息通知</a></li>
             </ul>
-            <div class="shopCar">
+            <div class="shopCarList">
+              <div class="shopCar">
                 <a href="#">
                     <i class="iconfont icon-gouwuchekong"></i>
                     <span>购物车</span>
                     <span>(0)</span>
                 </a>
-                <div class="white-area">购物车中还没有商品，赶紧选购吧！</div>
+              </div>
+              <div class="white-area">购物车中还没有商品，赶紧选购吧！</div>
             </div>
         </div>
     </div>
@@ -45,7 +47,7 @@
         </div>
         <div class="search">
             <input type="text" />
-          </div>
+        </div>
       </div>
     </div>
   </div>

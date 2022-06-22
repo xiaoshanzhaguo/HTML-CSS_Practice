@@ -39,7 +39,7 @@
             justify-content: space-around;
         }
 
-        .shopCar {
+        .shopCarList {
             display: inline-block;
             width: 110px;
             line-height: 40px;
@@ -63,18 +63,21 @@
                 color: #b0b0b0;
             }
 
-            &:hover {
+            .shopCar:hover {
                 background-color: #fff;
-
-                .white-area {
-                    opacity: 1;
-                    visibility: 1;
-                    height: 100px;
-                }
 
                 a {
                     color: #ff674b;
                 }
+            }
+
+            .shopCar:hover+.white-area {
+                opacity: 1;
+                visibility: 1;
+                height: 100px;
+                // 提高层叠性，要加postion，z-index才能起作用
+                position: relative;
+                z-index: 111;
             }
         }
     }
@@ -88,7 +91,7 @@
         background-color: pink;
 
         .logo_img {
-            // 这个水平和垂直居中方式中，子绝父相，父亲要有宽度和高度
+            // 这个水平和垂直居中方式中，子绝父相，父亲要有宽度和高度，子也要有高度和宽度
             position: relative;
             width: 80px;
             height: 100%;
@@ -134,7 +137,7 @@
             margin-left: 100px;
 
             input {
-                height: 47px;
+                height: 50px;
                 width: 260px;
                 border: #ccc;
             }
